@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -23,6 +23,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Bootstrap to make it pretty
 gem 'bootstrap-sass'
+
+# Use devise for user sign-up. Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.2'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

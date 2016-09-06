@@ -11,5 +11,10 @@ module Pinteresting
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    # Required for Heroku and Devise
+    # the following line recommended by one month
+    #   - but could be out of date, as didn't appear in the Devise instructions
+    # config.assets.initialize_on_precompile = false
   end
 end

@@ -24,8 +24,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Bootstrap to make it pretty
 gem 'bootstrap-sass'
 
-# Use devise for user sign-up. Flexible authentication solution for Rails with Warden
+# Use Devise for user sign-up. Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.2'
+
+# Use Paperclip for image upload (version 3.0 minimum)
+gem 'paperclip', '~> 5.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

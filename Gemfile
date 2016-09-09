@@ -16,8 +16,12 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+# Turbolinks can cause a lot of JavaScript errors later on, so we're recommending it not be used in your app.
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
+gem 'jquery-turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
@@ -33,6 +37,9 @@ gem 'paperclip', '~> 5.0'
 # Use Amazon S3 to store images when uploaded to Heroku
 # gem 'aws-sdk', '< 2.0'
 gem 'aws-sdk', '~> 2.0'
+
+# Use jQuery Masonry for layout and tile animation
+gem 'masonry-rails', '~> 0.2.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

@@ -91,8 +91,9 @@ Rails.application.configure do
   # Set Paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
     :storage => :s3,
+    :s3_protocol => :https,
     :s3_credentials => {
-      :s3_region => 'AWS_REGION',
+      :s3_region => ENV['AWS_REGION'],
       :bucket => ENV['S3_BUCKET_NAME'],
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']

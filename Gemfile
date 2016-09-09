@@ -30,6 +30,9 @@ gem 'devise', '~> 4.2'
 # Use Paperclip for image upload (version 3.0 minimum)
 gem 'paperclip', '~> 5.0'
 
+# Use Amazon S3 to store images when uploaded to Heroku
+gem 'aws-sdk', '< 2.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

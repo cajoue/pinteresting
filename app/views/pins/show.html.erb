@@ -1,11 +1,20 @@
-<%= image_tag @pin.image.url(:medium) %>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
-
-<% if @pin.user == current_user && user_signed_in? %>
-  <%= link_to 'Edit', edit_pin_path(@pin) %> |
-<% end %>
 <%= link_to 'Back', pins_path %>
+
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center">
+        <%= image_tag @pin.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+        <strong><%= @pin.description %></strong> <br />
+        <!-- don't want to show a users pin.user.email to everyone  -->
+        <%= @pin.user.id if @pin.user %>
+        <!-- added && user_signed_in? because links were visible otherwise -->
+        <% if @pin.user == current_user && user_signed_in? %>
+          <%= link_to 'Edit', edit_pin_path(@pin) %> |
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

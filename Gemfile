@@ -41,6 +41,12 @@ gem 'aws-sdk', '~> 2.0'
 # Use jQuery Masonry for layout and tile animation
 gem 'masonry-rails', '~> 0.2.0'
 
+# Use will_paginate to create pages of pins
+gem 'will_paginate', '~> 3.1.0'
+
+# Use will_paginate-bootstrap to style the paginator
+gem 'will_paginate-bootstrap'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

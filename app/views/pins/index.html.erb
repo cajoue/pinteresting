@@ -5,8 +5,7 @@
     <%= link_to image_tag(pin.image.url(:medium)), pin %>
     <div class="panel-body">
       <strong><%= pin.description %></strong> <br />
-      <!-- don't want to show a users pin.user.email to everyone  -->
-      <%= pin.user.id if pin.user %>
+      <%= pin.user.name if pin.user %>
       <!-- added && user_signed_in? because links were visible otherwise -->
       <% if pin.user == current_user && user_signed_in? %>
       <div class="actions">

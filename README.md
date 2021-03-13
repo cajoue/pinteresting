@@ -1,4 +1,4 @@
-# One Month Rails
+# One Month Rails - archived
 
 A pinterest style application built during the course [*One Month Rails*](http://onemonthrails.com) as conceived by [Mattan Griffel](http://mattangriffel.com)
 
